@@ -71,6 +71,23 @@
     margin-top: 0.5rem;
     line-height: 1.6;
   }
+  .cancel-block {
+    margin-top: 0.5rem;
+  }
+  .cancel-block .platform {
+    color: #C9A84C;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .cancel-block .platform:first-child {
+    margin-top: 0;
+  }
+  .cancel-block .path {
+    color: #ddd;
+    font-size: 0.9rem;
+  }
   footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
@@ -162,8 +179,18 @@
       <th>返品・キャンセルについて</th>
       <td>
         デジタルコンテンツの性質上、購入後の返金は原則対応しておりません。<br>
-        月額プランはいつでも解約可能です。解約後は次回更新日まで引き続きご利用いただけます。<br>
-        解約方法：ご利用のストア（App Store / Google Play）またはStripeの設定画面よりお手続きください。
+        月額プランはいつでも解約可能です。解約後も、すでにお支払い済みの期間の末日までは引き続きご利用いただけます。
+
+        <div class="cancel-block">
+          <div class="platform">解約方法（Web版）</div>
+          <div class="path">アプリ内の【設定 → サブスクリプション管理】からお手続きください。</div>
+
+          <div class="platform">解約方法（iOS）</div>
+          <div class="path">iPhoneの【設定 → Apple ID → サブスクリプション】から「TriEdge」を選択して解約してください。</div>
+
+          <div class="platform">解約方法（Android）</div>
+          <div class="path">Google Playアプリの【メニュー → お支払いと定期購入 → 定期購入】から「TriEdge」を選択して解約してください。</div>
+        </div>
       </td>
     </tr>
     <tr>
